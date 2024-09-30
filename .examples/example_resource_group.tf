@@ -1,4 +1,3 @@
-# resource groups for pl-identity
 module "resource_groups" {
   source = "../modules/terraform-azurerm-resource-group"
 

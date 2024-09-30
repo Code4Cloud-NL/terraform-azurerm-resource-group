@@ -45,7 +45,6 @@ No requirements.
 ### 2 resource groups with a different instance number (e.g c4c-connectivity-net-prd-001, c4c-prd-connectivity-vms-prd-002)
 
 ```hcl
-# resource groups for pl-identity
 module "resource_groups" {
   source = "../modules/terraform-azurerm-resource-group"
 
