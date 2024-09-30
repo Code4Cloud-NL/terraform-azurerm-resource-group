@@ -37,7 +37,7 @@ content: |-
 
   ## Example(s)
 
-  ### 2 resource groups with a different instance number (e.g lab-identity-net-prod-002, lab-identity-vms-prod-003)
+  ### 2 resource groups with a different instance number (e.g c4c-connectivity-net-prd-001, c4c-prd-connectivity-vms-prod-002)
 
   ```hcl
   {{ include ".examples/example_resource_group.tf"}}

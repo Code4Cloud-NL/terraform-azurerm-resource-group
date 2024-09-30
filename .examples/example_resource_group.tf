@@ -15,5 +15,5 @@ module "resource_groups" {
     managed_by  = "terraform"
   }
 
-  resource_groups = [{ name = "net", instance = "002" }, { name = "vms", instance = "003" }] # (required) the name and (optional) instance number for the resource group(s).
+  resource_groups = [{ name = "net" }, { name = "vms", instance = "002" }] # (required) the name and (optional) instance number for the resource group(s).
 }

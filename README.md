@@ -42,7 +42,7 @@ No requirements.
 
 ## Example(s)
 
-### 2 resource groups with a different instance number (e.g lab-identity-net-prod-002, lab-identity-vms-prod-003)
+### 2 resource groups with a different instance number (e.g c4c-connectivity-net-prd-001, c4c-prd-connectivity-vms-prod-002)
 
 ```hcl
 # resource groups for pl-identity
@@ -62,7 +62,7 @@ module "resource_groups" {
     managed_by  = "terraform"
   }
 
-  resource_groups = [{ name = "net", instance = "002" }, { name = "vms", instance = "003" }] # (required) the name and (optional) instance number for the resource group(s).
+  resource_groups = [{ name = "net" }, { name = "vms", instance = "002" }] # (required) the name and (optional) instance number for the resource group(s).
 }
 ```
 
