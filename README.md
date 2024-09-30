@@ -8,7 +8,7 @@ This module simplifies the creation of one or more resource groups (rg) in Azure
 Creates one or more maintenance configurations in Azure with the following (optional) features:
 
 - Resource groups are created with a standard naming convention: prefix-application-name-environment-001
-- If necessary this can be changed by using the instance object (e.g. instance = "002").
+- If necessary the instance number can be changed by using the instance object (e.g. instance = "002").
 
 ## Requirements
 
