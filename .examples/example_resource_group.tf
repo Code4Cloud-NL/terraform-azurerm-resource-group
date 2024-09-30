@@ -4,7 +4,7 @@ module "resource_groups" {
 
   general = {                    # (required) general information used in the naming of resources etc.
     prefix      = "c4c"          # (required) the prefix of the customer (e.g. c4c)
-    application = "connectivity" # (required) the unique name of the vpn gateway (must be unique within the subscription)
+    application = "connectivity" # (required) the unique name of the resource groups (must be unique within the subscription)
     environment = "prd"          # (required) the environment (e.g. lab, stg, dev, tst, acc, prd)
     location    = "westeurope"   # (required) the location for the resources (e.g. westeurope, northeurope)
   }

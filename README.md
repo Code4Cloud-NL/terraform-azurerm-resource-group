@@ -42,7 +42,7 @@ No requirements.
 
 ## Example(s)
 
-### 2 resource groups with a different instance number (e.g c4c-connectivity-net-prd-001, c4c-prd-connectivity-vms-prod-002)
+### 2 resource groups with a different instance number (e.g c4c-connectivity-net-prd-001, c4c-prd-connectivity-vms-prd-002)
 
 ```hcl
 # resource groups for pl-identity
@@ -51,7 +51,7 @@ module "resource_groups" {
 
   general = {                    # (required) general information used in the naming of resources etc.
     prefix      = "c4c"          # (required) the prefix of the customer (e.g. c4c)
-    application = "connectivity" # (required) the unique name of the vpn gateway (must be unique within the subscription)
+    application = "connectivity" # (required) the unique name of the resource groups (must be unique within the subscription)
     environment = "prd"          # (required) the environment (e.g. lab, stg, dev, tst, acc, prd)
     location    = "westeurope"   # (required) the location for the resources (e.g. westeurope, northeurope)
   }
